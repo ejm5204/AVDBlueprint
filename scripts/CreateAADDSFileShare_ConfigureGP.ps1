@@ -32,7 +32,7 @@ $Scriptblock = {
     Start-Transcript -OutputDirectory C:\Windows\Temp
         
     #Login with Managed Identity
-    Connect-AzAccount -Identity
+    Connect-AzAccount -Identity -Environment AzureUSGovernment
 
     whoami | Out-File -append c:\windows\temp\innercontext.txt
 
@@ -120,7 +120,7 @@ $Scriptblock = {
 
 ############# Group Policy and FSLogix Session Host Section #################
     
-Connect-AzAccount -Identity
+Connect-AzAccount -Identity -Environment AzureUSGovernment
 
 # Set up a log to measure GP settings time to complete
 $CTempPath = 'C:\Temp'

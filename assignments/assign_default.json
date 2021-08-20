@@ -2,7 +2,7 @@
     "name": "WVD Blueprint - Default Configuration",
     "type": "Microsoft.Blueprint/blueprintAssignments",
     "apiVersion": "2018-11-01-preview",
-    "location": "[REGION]",
+    "location": "USGovVirginia",
     "identity": {
         "type": "UserAssigned",
         "userAssignedIdentities": {
@@ -36,7 +36,7 @@
       },
       "resourceGroups": {
         "ResourceGroup": {
-          "location": "[REGION]"
+          "location": "USGovVirginia"
         }
       }
     }
