@@ -246,7 +246,7 @@ Get-Date | Out-File -Append $ScriptLogActionsTimes
 }
 
 #Get an Azure Managed Identity context
-Connect-AzAccount -Identity
+Connect-AzAccount -Identity -Environment AzureUSGovernment
 
 #Create a DAuser context, using password from Key Vault
 $KeyVault = Get-AzKeyVault -VaultName "*-sharedsvcs-kv"
